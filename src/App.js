@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
-import UserItem from './components/layout/UserItem';
+import Users from './components/Users';
 import './App.css';
 
 function App() {
@@ -8,7 +8,10 @@ function App() {
     <div className="App">
       <Navbar title='Github Finder' icon='fa fa-github'
       />
-      <UserItem />
+      <div className="container">
+        <Users />
+      </div>
+
     </div>
   );
 }
