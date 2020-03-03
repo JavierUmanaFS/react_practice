@@ -10,7 +10,7 @@ const Users = ({ users, loading }) => {
     return (
       <div style={userStyle}>
         {users.map(user => (
-          <UserItem key={user.id} user={user} />
+          <UserItem key={user.id} users={user} />
         ))}
       </div>
     );
@@ -29,4 +29,4 @@ const userStyle = {
   gridGap: '1rem'
 }
 
-export default Users
+export default Users;
